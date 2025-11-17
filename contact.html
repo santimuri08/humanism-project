@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Humanist Modernism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Humanist Modernism</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="designers.html">Designers</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="modern/index.html" class="nav-cta">Modern Version</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="content-container">
+                <h1>Get in Touch</h1>
+                <p class="intro-text">Questions, feedback, or just want to chat about design? Reach out!</p>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <div class="char-counter"><span id="char-count">0</span> / 1000</div>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <span class="button-icon">→</span>
+                        </button>
+
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <details class="faq-item">
+                        <summary>Can I use this code for my own project?</summary>
+                        <p>Yes! This is an educational project. Feel free to learn from and reference the code.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What technologies are used?</summary>
+                        <p>HTML5, CSS3, JavaScript (ES6+), and React for the modern version.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How long did this take to build?</summary>
+                        <p>The original version took 14 hours. The modern React version added another 8 hours.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is this mobile-friendly?</summary>
+                        <p>Absolutely! The design is fully responsive and optimized for all screen sizes.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>IS 373 - Content Management Systems | Design History Project 2025</p>
+        </div>
+    </footer>
+
+    <script src="enhanced-features.js"></script>
+</body>
+</html>
