@@ -1,166 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humanist Modernism - Design History Gallery</title>
-    <meta name="description" content="Explore the principles and history of Humanist Modernism design through interactive demonstrations and examples.">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humanist Modernism 2.0 - Future Design</title>
+    <meta name="description" content="Experience design history reimagined with cutting-edge web technology" />
     
-    <!-- Preconnect to Google Fonts -->
+    <!-- Preload fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#2C5F8D">
-</head>
-<body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Header & Navigation -->
-    <header class="header" role="banner">
-        <nav class="nav-container" role="navigation" aria-label="Main navigation">
-            <div class="logo">
-                <a href="index.html">Humanist Modernism</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="designers.html">Designers</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="modern/index.html" class="nav-cta">Modern Version</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Humanist Modernism</h1>
-                <p class="hero-subtitle">Where timeless design meets human comfort</p>
-                <p class="hero-description">A design philosophy that prioritizes readability, clarity, and the human experience above all else.</p>
-            </div>
-        </section>
-
-        <!-- Principles Section -->
-        <section class="section">
-            <div class="content-container">
-                <h2>Core Principles</h2>
-                <p class="intro-text">Humanist Modernism combines the best of modernist clarity with humanist warmth, creating designs that are both functional and inviting.</p>
-                
-                <div class="principles-grid">
-                    <article class="principle-card">
-                        <div class="principle-icon">📖</div>
-                        <h3>Readability First</h3>
-                        <p>Typography sized for comfortable extended reading (19px body text, 1.75 line-height, ~65 characters per line).</p>
-                    </article>
-                    
-                    <article class="principle-card">
-                        <div class="principle-icon">✨</div>
-                        <h3>Generous Spacing</h3>
-                        <p>Ample whitespace that allows content to breathe and guides the eye naturally through the page.</p>
-                    </article>
-                    
-                    <article class="principle-card">
-                        <div class="principle-icon">🎨</div>
-                        <h3>Warm Palette</h3>
-                        <p>Muted, sophisticated colors that create a welcoming environment without visual strain.</p>
-                    </article>
-                    
-                    <article class="principle-card">
-                        <div class="principle-icon">🔍</div>
-                        <h3>Clear Hierarchy</h3>
-                        <p>Visual organization through size, weight, and spacing—not decorative elements.</p>
-                    </article>
-                    
-                    <article class="principle-card">
-                        <div class="principle-icon">🌐</div>
-                        <h3>Universal Access</h3>
-                        <p>Designed for everyone, meeting WCAG AAA standards for accessibility.</p>
-                    </article>
-                    
-                    <article class="principle-card">
-                        <div class="principle-icon">⚡</div>
-                        <h3>Purposeful Motion</h3>
-                        <p>Subtle animations that enhance understanding without distraction.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Demo Section -->
-        <section class="section demo-section">
-            <div class="content-container">
-                <h2>Try It Yourself</h2>
-                <p class="intro-text">Experience the difference that proper typography makes in reading comfort.</p>
-                
-                <!-- Font Size Adjuster -->
-                <div class="demo-tool">
-                    <h3>Font Size Impact</h3>
-                    <div class="tool-controls">
-                        <label for="font-size">Adjust text size: <span id="size-value">19px</span></label>
-                        <input type="range" id="font-size" min="14" max="24" value="19" step="1">
-                    </div>
-                    <div class="sample-text" id="sample-text">
-                        <p>The quick brown fox jumps over the lazy dog. This sentence demonstrates how font size affects readability. Notice how different sizes change your reading comfort and comprehension speed.</p>
-                    </div>
-                </div>
-
-                <!-- Typography Comparison -->
-                <div class="demo-tool">
-                    <h3>Humanist vs Geometric Typography</h3>
-                    <div class="tool-controls">
-                        <label for="compare-size">Font size: <span id="size-display">19px</span></label>
-                        <input type="range" id="compare-size" min="14" max="24" value="19" step="1">
-                    </div>
-                    <div class="comparison-grid">
-                        <div class="comparison-sample humanist-sample" id="humanist-sample">
-                            <h4>Humanist (Open Sans)</h4>
-                            <p>Natural, organic letterforms with varied stroke widths create a warm, approachable reading experience.</p>
-                        </div>
-                        <div class="comparison-sample geometric-sample" id="geometric-sample">
-                            <h4>Geometric (Futura-like)</h4>
-                            <p>Natural, organic letterforms with varied stroke widths create a warm, approachable reading experience.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="section cta-section">
-            <div class="content-container">
-                <h2>Experience Humanist Modernism</h2>
-                <p class="cta-text">This website itself demonstrates Humanist Modernism principles. Notice the comfortable reading width, generous spacing, warm colors, and clear hierarchy.</p>
-                <div class="cta-buttons">
-                    <a href="about.html" class="cta-button">Learn About This Project</a>
-                    <a href="modern/index.html" class="cta-button cta-button-secondary">Try Modern Version</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="footer-container">
-            <p>IS 373 - Content Management Systems | Design History Project 2025</p>
-            <p>Exploring design movements through modern technology</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="enhanced-features.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
