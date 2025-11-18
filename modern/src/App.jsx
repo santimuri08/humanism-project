@@ -4,11 +4,13 @@ import ThemeSwitcher from './components/ThemeSwitcher'
 import FloatingShapes from './components/FloatingShapes'
 import CursorTrail from './components/CursorTrail'
 import ScrollProgress from './components/ScrollProgress'
+import ScrollToTop from './components/ScrollToTop'
 import CircleMenu from './components/CircleMenu'
 import MobileMenu from './components/MobileMenu'
 import Home from './pages/Home'
 import Timeline from './pages/Timeline'
 import Designers from './pages/Designers'
+import Puzzle from './pages/Puzzle'
 import Resources from './pages/Resources'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -109,7 +111,7 @@ function App() {
           
           // Show notification
           const notification = document.createElement('div')
-          notification.textContent = '🎮 KONAMI CODE ACTIVATED! 🎮'
+          notification.textContent = '🎮 KONAMI CODE ACTIVATED!'
           notification.style.cssText = `
             position: fixed;
             top: 50%;
@@ -147,6 +149,9 @@ function App() {
   return (
     <Router>
       <div className={`min-h-screen transition-colors duration-500 ${theme}`}>
+        {/* ScrollToTop must be inside Router */}
+        <ScrollToTop />
+        
         {/* Global Components */}
         <ScrollProgress />
         <FloatingShapes />
@@ -173,6 +178,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/designers" element={<Designers />} />
+          <Route path="/puzzle" element={<Puzzle />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
